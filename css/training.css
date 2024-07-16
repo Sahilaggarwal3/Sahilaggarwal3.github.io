@@ -1,0 +1,58 @@
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2rem;
+}
+
+caption {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 1% 0;
+    text-align: left;
+}
+
+th, td {
+    border: 1px solid #7188bb;
+    padding: 1%;
+    text-align: center;
+}
+
+th {
+    background-color: #000;
+    color: #fff;
+    font-size: 1.15em;
+}
+
+.alt-row {
+    background-color: #d3e788;
+}
+
+tbody tr:hover {
+    background-color: #c5d86d;
+}
+
+/* Media queries */
+@media (min-width: 768px) {
+    .container {
+        width: 80%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        width: 70%;
+    }
+}
+
+@media (max-width: 768px) {
+    nav .mobile a {
+        display: block;
+        padding: 0.5rem 0;
+    }
+}
+
+/* Pseudo-classes for navigation links */
+nav .mobile a:hover {
+    color: #ddd;
+}
