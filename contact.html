@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<!-- 
+  Created by: Sahil 
+  Student Id: C0943353
+-->
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contact Us - Chill Craft</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/contact.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <header>
+      <img src="/images/banner.jpg" alt="Company Banner - Chill Craft" />
+    </header>
+
+    <div class="container">
+      <nav>
+        <a href="index.html">
+          <img src="/images/logo.jpg" alt="Company Logo" class="logo" />
+        </a>
+        <div class="mobile">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="team.html">Our Team</a>
+          <a href="specials.html">Specials</a>
+          <a href="training.html">Training</a>
+          <a href="media.html">Media</a>
+          <a href="faqs.html">FAQs</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+      </nav>
+      <main>
+        <h2>Contact Us</h2>
+        <p>
+          We would love to hear from you! Please fill out the form below to get
+          in touch.
+        </p>
+
+        <form action="/submit-form" method="post" class="contact-form">
+          <fieldset>
+            <legend>Contact Information</legend>
+
+            <ol>
+              <li>
+                <label for="name">Name:</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Your Full Name"
+                  required
+                />
+              </li>
+              <li>
+                <label for="email">Email:</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="example@domain.com"
+                  required
+                />
+              </li>
+              <li>
+                <label for="contact-method">Preferred Contact Method:</label>
+                <input
+                  type="radio"
+                  id="contact-email"
+                  name="contact-method"
+                  value="email"
+                  checked
+                />
+                <label for="contact-email">Email</label>
+                <input
+                  type="radio"
+                  id="contact-phone"
+                  name="contact-method"
+                  value="phone"
+                />
+                <label for="contact-phone">Phone</label>
+              </li>
+              <li>
+                <label for="subject">Subject:</label>
+                <select id="subject" name="subject">
+                  <option value="inquiry">General Inquiry</option>
+                  <option value="support">Support</option>
+                  <option value="feedback">Feedback</option>
+                  <option value="other">Other</option>
+                </select>
+              </li>
+              <li>
+                <label for="message">Message:</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  placeholder="Your Message"
+                  required
+                ></textarea>
+              </li>
+              <li>
+                <label for="subscribe">Subscribe to Newsletter:</label>
+                <input
+                  type="checkbox"
+                  id="subscribe"
+                  name="subscribe"
+                  value="yes"
+                />
+              </li>
+              <li>
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required />
+              </li>
+            </ol>
+          </fieldset>
+
+          <fieldset>
+            <legend>Additional Information</legend>
+
+            <ol>
+              <li>
+                <label for="service-rating">Rate Our Service:</label>
+                <select id="service-rating" name="service-rating">
+                  <option value="excellent">Excellent</option>
+                  <option value="good">Good</option>
+                  <option value="average">Average</option>
+                  <option value="poor">Poor</option>
+                </select>
+              </li>
+              <li>
+                <label for="how-heard">How did you hear about us?</label>
+                <select id="how-heard" name="how-heard">
+                  <option value="friends">Friends</option>
+                  <option value="advertisement">Advertisement</option>
+                  <option value="social-media">Social Media</option>
+                  <option value="other">Other</option>
+                </select>
+              </li>
+            </ol>
+          </fieldset>
+
+          <div class="form-buttons">
+            <button type="submit">Submit Request</button>
+            <button type="reset">Reset Form</button>
+          </div>
+        </form>
+      </main>
+
+      <footer>
+        <p>&copy; 2099. All Rights Reserved.</p>
+        <p><a href="mailto:info@chillcraft.com">Request information</a></p>
+        <p>Sahil C0943353</p>
+      </footer>
+    </div>
+  </body>
+</html>
