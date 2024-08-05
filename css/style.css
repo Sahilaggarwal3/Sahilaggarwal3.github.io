@@ -213,3 +213,26 @@ ol li:hover {
   cursor: pointer;
   color: #00c6ff;
 }
+
+/* Scroll to Top Button */
+#scrollTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 50px;
+  z-index: 10;
+  border: none;
+  outline: none;
+  background-color: #000;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 18px;
+  opacity: 0.2;
+  transition: opacity 0.3s;
+}
+
+#scrollTopBtn:hover {
+  opacity: 1;
+}
